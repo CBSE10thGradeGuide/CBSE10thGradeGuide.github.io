@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 html { 
   background: url("image3.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -6,7 +8,7 @@ html {
   background-size: cover;
 }
 body{
-	font-family: monospace;
+	font-family: 'Ubuntu', sans-serif;
 	outline: none;
 	width: 100%;
 	background-image: url(image3.jpg);
@@ -49,7 +51,7 @@ body{
 display: none;
   position: absolute;
   background-color: #f0f0f0;
-  margin-left: 186px;
+  margin-left: 176px;
   margin-top: -26px;
 
 }
@@ -66,15 +68,15 @@ display: none;
 
 #sub-dropdown:hover #sub-dropdown-menu {display: block;}
 
-img.goal{
-	float: right;
-	width: 24%;
-
+.goal{	
+	margin: 35px;
+	height: 350px;
+	object-fit: contain;
+	border-radius: 10px;
 }
 
-.header-bottom{
-position: absolute;
-float: left;
+.header_wrapper{
+	display: flex;
 }
 
 .blue-rectangle {
@@ -84,15 +86,18 @@ margin-bottom: 20px;
 }
 
 .blue-rectangle p{
-color:white;
-font-family: Arial, Helvetica, sans-serif;
-font-size:15px;
+	color:white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:24px;
+	font-weight: 500;
+
 }
+
 
 h1{
 	color: black;
 	font-size: 40px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .footer .footer-bottom {
@@ -112,19 +117,17 @@ a.yt{
 
 a.notes{
 	font-size:15pt;
-	font-family: 'Cambria','times new roman','garamond',serif;
-}
-
+	font-family: 'Ubuntu', sans-serif;}
 p.notes{
 	font-size:15pt;
-	font-family: 'Cambria','times new roman','garamond',serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 h3
 {
 	font-size:20pt;
 	color: black;
-	font-family: 'Cambria','times new roman','garamond',serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 a.banner
 {
@@ -134,7 +137,7 @@ a.banner
 marquee{
 	 background-color: #1FDDF0;
 	 color: black;
-	 font-family: Arial, Helvetica, sans-serif;
+	 font-family: 'Ubuntu', sans-serif;
 	 font-size: 21px;
 	 
 }
@@ -180,14 +183,25 @@ marquee{
  transform: translateX(-100%); 
  }
 }
-@media only screen and (max-width: 600px) {
-  body {
-  }
+@media only screen and (max-width: 760px) {
+	.goal{	
+		margin: 20px;
+		height: 250px;
+		object-fit: contain;
+		border-radius: 10px;
+	}
 }
 
 img.logos{
 	float: right;
-	width: 10%;
+	width: 100px;
+	margin: 20px;
 
 }
 
+#logo{
+	height: 50px;
+	object-fit: contain;
+	background-color: #0751a6;
+	margin-top: -15px;
+}
